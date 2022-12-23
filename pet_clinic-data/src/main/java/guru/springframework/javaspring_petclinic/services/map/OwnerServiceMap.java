@@ -71,4 +71,9 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     public Owner findByLastName(String lastname) {
         return null;
     }
+
+    @Override
+    public Set<Pet> findAllPetsBelongingToOwner(String lastName) {
+        return null;
+    }
 }
