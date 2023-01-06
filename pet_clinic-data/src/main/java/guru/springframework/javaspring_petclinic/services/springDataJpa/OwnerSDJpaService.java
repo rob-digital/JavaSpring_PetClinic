@@ -14,7 +14,7 @@ import java.util.Optional;
 import java.util.Set;
 
 @Service
-@Profile(value = "springDataJpa")
+@Profile(value = "springdatajpa")
 public class OwnerSDJpaService implements OwnerService {
 
     private final OwnerRepository ownerRepository;
@@ -32,6 +32,7 @@ public class OwnerSDJpaService implements OwnerService {
     public Set<Owner> findAll() {
         Set<Owner> owners = new HashSet<>();
         ownerRepository.findAll().forEach(owners::add);
+
         return owners;
     }
 
